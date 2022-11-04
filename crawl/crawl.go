@@ -6,6 +6,7 @@ import (
 	"log"
 )
 
+// Crawl函数实现爬取内容
 func Crawl(url string) []string {
 	fmt.Println(url)
 	list, err := links.Extract(url)
@@ -13,4 +14,5 @@ func Crawl(url string) []string {
 		log.Print(err)
 	}
 	return list
+
 }
